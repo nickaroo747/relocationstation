@@ -1,0 +1,4 @@
+ S3_KEY: <key here>
+ S3_SECRET: <secret key here>
+ S3_BUCKET: <bucket name here>
+ S3_REGION: <region name here>
