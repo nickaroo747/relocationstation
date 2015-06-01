@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.2.1'
 
+gem 'carrierwave'
+gem 'fog'
+gem 'rmagick'
 gem 'figaro', '~> 1.1.1'  
 gem 'rails', '4.1.5'
 gem 'aws-s3', :require => 'aws/s3'
