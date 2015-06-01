@@ -1,5 +1,5 @@
 class AddUrlToPins < ActiveRecord::Migration
   def change
-    add_column :url, :string
+    add_column :pins, :url, :string
   end
 end
