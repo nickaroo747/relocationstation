@@ -11,11 +11,8 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
 
-S3_KEY: AKIAIBQXB563M6MTZHFQ
-S3_SECRET: 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
-S3_BUCKET: relocationstation
-S3_REGION: US Standard
-
-
-
+S3_KEY: "asdfasdfasdfa"
+S3_SECRET: "asdfasdfadfdfdgfdgdfgjdghfhjkfgk"
+S3_BUCKET: "relocationstation"
+S3_REGION: "US Standard"
 
