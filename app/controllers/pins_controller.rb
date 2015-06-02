@@ -1,5 +1,5 @@
 class PinsController < ApplicationController
-	before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
+	before_action :find_pin, only: [:show, :edit, :update, :destroy]
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
@@ -17,7 +17,7 @@ class PinsController < ApplicationController
 		@pin = current_user.pins.build(pin_params)
 
 		if @pin.save
-			redirect_to @pin, notice: "Pin was successfully created"
+			redirect_to @pin, notice: "New Post created"
 		else
 			render 'new'
 		end
@@ -28,7 +28,7 @@ class PinsController < ApplicationController
 
 	def update
 		if @pin.update(pin_params)
-			redirect_to @pin, notice: "Pin was successfully updated"
+			redirect_to @pin, notice: "Post has been updated"
 		else
 			render 'edit'
 		end
@@ -39,10 +39,6 @@ class PinsController < ApplicationController
 		redirect_to root_path
 	end
 
-	def upvote
-		@pin.upvote_by current_user
-		redirect_to :back
-	end
 
 	private
 
