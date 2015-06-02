@@ -17,7 +17,7 @@ class PinsController < ApplicationController
 		@pin = current_user.pins.build(pin_params)
 
 		if @pin.save
-			redirect_to @pin, notice: "New Post created"
+			redirect_to root_path, notice: "New Post created"
 		else
 			render 'new'
 		end
