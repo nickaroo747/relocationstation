@@ -16,11 +16,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'haml', '~> 4.0.5'
 gem 'devise', '~> 3.3.0'
-gem 'paperclip', '~> 4.2.1'
+gem 'paperclip'
+gem 'aws-sdk'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'masonry-rails', '~> 0.2.1'
 gem 'acts_as_votable', '~> 0.10.0'
-gem 'aws-sdk', '~> 1.20.0'
 gem 'simple_form', '~> 3.0.2'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
