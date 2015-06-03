@@ -4,8 +4,8 @@ CarrierWave.configure do |config|
 
   config.fog_credentials = {
     :provider               => 'AWS',                        # required
-    :aws_access_key_id      => ENV['S3_KEY'],                        # required
-    :aws_secret_access_key  => ENV['S3_SECRET'],                     # required
+    :aws_access_key_id      => 'AKIAJRIDRSM4MD4P47HQ',                        # required
+    :aws_secret_access_key  => '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',                     # required
     :region                 => 'us-west-2'                 # optional, defaults to 'us-east-1
   }
   config.fog_directory  = 'relocationstation'                             # required
