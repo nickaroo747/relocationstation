@@ -9,3 +9,6 @@ class AddAttachmentImageToPins < ActiveRecord::Migration
     remove_attachment :pins, :image
   end
 end
+
+
+# just cause
